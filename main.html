@@ -21,25 +21,25 @@
                 <header class="calc-display row">
                     <h1>CALCULATOR</h1>
                     <input type="text" class="calc_expression rounded text-end col-12 my-3 p-2 h2" id="calc_expression" name="calc_expression"/>
-                    <div type="number" class="calc__result col-12 mb-3 py-2 h3" id="calc__result" name="calc__result">0</div>
+                    <div type="number" class="calc__result text-end col-12 mb-3 py-2 h3" id="calc__result" name="calc__result">0</div>
                 </header>
             
                 <div class="calc-body row">
-                    <button type="button" class="add-operator col-3 p-1" id="add-operator" name="add-operator" onclick="updateExpression(event.target.textContent)">+</button>
-                    <button type="button" class="sub-operator col-3 p-1" id="sub-operator" name="sub-operator" onclick="updateExpression(event.target.textContent)">-</button>
-                    <button type="button" class="mul-operator col-3 p-1" id="mul-operator" name="mul-operator" onclick="updateExpression(event.target.textContent)">*</button>
-                    <button type="button" class="div-operator col-3 p-1" id="div-operator" name="div-operator" onclick="updateExpression(event.target.textContent)">/</button>
+                    <button type="button" class="add-operator col-3 p-1" id="add-operator" name="add-operator">+</button>
+                    <button type="button" class="sub-operator col-3 p-1" id="sub-operator" name="sub-operator">-</button>
+                    <button type="button" class="mul-operator col-3 p-1" id="mul-operator" name="mul-operator">*</button>
+                    <button type="button" class="div-operator col-3 p-1" id="div-operator" name="div-operator">/</button>
 
                     <div class="calc__arithmetic-container col-9" id="calc__dynamic-keyboard" name="calc__dynamic-keyboard"></div>
                          <!--dinamic DOM here -->
 
-                        <button type="button" class="equal-operator col-3" id="equal-operator" name="equal-operator" onclick="updateExpression(event.target.textContent)">=</button>
+                        <button type="button" class="equal-operator col-3" id="equal-operator" name="equal-operator">=</button>
                     </div>
                 </div>
             </div>
         </section>
     
-    <script src="calculator.js"></script>
+    <script type="module" src="main.js"></script>
     <script 
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
@@ -47,3 +47,4 @@
     ></script>
 </body>
 </html>
+
