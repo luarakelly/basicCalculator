@@ -1,0 +1,16 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+.calc{
+    background-color:rgb(240, 240, 253);
+}
+input{
+    background-color:rgb(205, 205, 247);
+    border-style: none;
+}
+button{
+    background-color:rgb(250, 248, 255) ;
+    border-radius: 30%;
+    border-color: rgb(205, 205, 247);    
+}
